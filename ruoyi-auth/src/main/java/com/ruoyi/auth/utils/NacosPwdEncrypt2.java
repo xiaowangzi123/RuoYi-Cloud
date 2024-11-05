@@ -16,7 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 public class NacosPwdEncrypt2 {
 
     public static void main(String[] args) {
-        System.out.println(new BCryptPasswordEncoder().encode("NacosPwdEncrypt"));
+        System.out.println(new BCryptPasswordEncoder().encode("PJXp8fZTy1ktEV3S"));
 
 
         StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
@@ -26,7 +26,7 @@ public class NacosPwdEncrypt2 {
         encryptor.setIvGenerator(new RandomIvGenerator());
 
         // 加密
-        String encryptText = encryptor.encrypt("NacosPwdEncrypt");
+        String encryptText = encryptor.encrypt("PJXp8fZTy1ktEV3S");
         log.info(":::::|{}", encryptText);
 
         // 解密
@@ -37,7 +37,7 @@ public class NacosPwdEncrypt2 {
 
         PooledPBEStringEncryptor encryptor2 = new PooledPBEStringEncryptor();
         SimpleStringPBEConfig config2 = new SimpleStringPBEConfig();
-        config2.setPassword("NacosPwdEncrypt"); //加密密码自己定义
+        config2.setPassword("PJXp8fZTy1ktEV3S"); //加密密码自己定义
 
         //默认值
         config2.setAlgorithm("PBEWITHHMACSHA512ANDAES_256");
